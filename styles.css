@@ -90,28 +90,32 @@ html{
 /* home section styling */
 .home {
     display: flex;
-    background-color: #1B1B1B;
+    background-image: url("/website\ 2.0\ style/Keyboard img");
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;
+    text-align: left;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
 }
 .home .home-content .text-1 {
     font-size: 75px;
     font-weight: 600;
     padding-top: 10%;
-    margin-left: 60px;
+    text-align: left;
 }
 .home .home-content .text-2 {
     font-size: 35px;
     margin: 5px 0;
-    margin-left: 60px;
+    text-align: left;
 }
 .home .home-content .text-3 {
     font-size: 25px;
     margin: 5px 0;
-    margin-left: 60px;
+    text-align: left;
 }
 .home .home-content .text-3 span{
     color: #EE3453;
@@ -243,38 +247,68 @@ section .title::after {
     background: #fff;
     content: "Lavori recenti";
 }
-.projects .projects-content .card {
-    width: calc(33% - 20px);
+.card-prjct {
+    background: white;
+    width: 340px;
+    margin: 10px;
     background: #222;
     text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    background-color: aqua;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/*classi delle immagini */
+
+.img-1 {
+    background-image: url("/website\ 2.0\ style/cafe menu img.jpg");
+}
+.img-2 {
+    background-image: url("/website\ 2.0\ style/Sito web.jpg");
+}
+.img-3 {
+    background-image: url("/website\ 2.0\ style/Color flipper.jpg");
+}
+.img-4 {
+    background-image: url("/website\ 2.0\ style/nutrition lable img.jpg");
+}
+.img-5 {
+    background-image: url("/website\ 2.0\ style/Registration Form img.jpg");
+}
+.card-prjct h2 {
+    padding: 10px;
+    color: white;
+}
+.card-prjct p {
+    padding: 10px;
+    color: white;
+}
+.card-prjct a {
+    background-color: #EE3453;
+    color: white;
+    padding: 15px 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 20px;
     border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
+}
+.card-prjct:hover {
+    transform: scale(1.03);
     transition: all 0.3s ease;
 }
-.projects .projects-content .card:hover {
-    background: #EE3453;
-}
-.projects .projects-content .card .box {
+.card-prjct a:hover {
+    transform: scale(1.03);
     transition: all 0.3s ease;
 }
-.projects .projects-content .card:hover .box{
-    transform: scale(1.05);
-}
-.projects .projects-content .card .crimson-text-1{
-    font-size: 30px;
-    color: #EE3453;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-.projects .projects-content .card:hover .crimson-text-1{
-    color: #fff;
-}
-.projects .projects-content .card .text-1 {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
+
 /*contact section styling*/
 .contact {
     color: #fff;
@@ -396,6 +430,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .card-prjct {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 500px){
     .home .home-content .text-2 {
@@ -408,6 +446,9 @@ footer span a:hover{
         width: 100%;
     }
     .projects .projects-content .card {
+        width: 100%;
+    }
+    .card-prjct {
         width: 100%;
     }
 }
