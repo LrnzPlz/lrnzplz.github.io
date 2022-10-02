@@ -283,6 +283,9 @@ section .title::after {
 .img-5 {
     background-image: url("/website\ 2.0\ style/Registration Form img.jpg");
 }
+.img-6 {
+    background-image: url("/website\ 2.0\ style/counter.jpg");
+}
 .card-prjct h2 {
     padding: 10px;
     color: white;
