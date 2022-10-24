@@ -179,7 +179,7 @@ section .title::after {
     justify-content: space-between;
 }
 .about .title::after {
-    content: "Chi sono";
+    content: "Who I am";
 }
 .about .about-content {
     display: flex;
@@ -198,7 +198,7 @@ section .title::after {
 }
 .skills .title::after{
     background: #111;
-    content: "Tecnologie";
+    content: "Technologies";
 }
 .skills .skills-content .card {
     width: calc(33% - 20px);
@@ -245,7 +245,7 @@ section .title::after {
 }
 .projects .title::after{
     background: #fff;
-    content: "Lavori recenti";
+    content: "Recent Works";
 }
 .card-prjct {
     background: white;
