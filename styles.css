@@ -134,7 +134,7 @@ html{
 }
 /*All similar content styling*/
 section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 section .title {
     position: relative;
@@ -152,7 +152,7 @@ section .title::before {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #1c1c1c;
     transform: translateX(-50%);
 }
 section .title::after {
@@ -166,7 +166,16 @@ section .title::after {
     transform: translateX(-50%);
 }
 
+.Description-Paragraph{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 /*about section styling*/
+.about{
+    color: #fff;
+    background: #1c1c1c;
+}
 .about, .skills, .projects, footer{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -178,7 +187,11 @@ section .title::after {
     align-items: center;
     justify-content: space-between;
 }
+.about .title::before {
+    background: #fff;
+}
 .about .title::after {
+    background: #1c1c1c;
     content: "Who I am";
 }
 .about .about-content {
@@ -188,16 +201,107 @@ section .title::after {
     justify-content: space-between;
     width: 100%;
 }
+
+/*experience section styling*/
+.experience{
+    color: #fff;
+    background: #1c1c1c;
+}
+.experience, .skills, .projects, footer{
+    font-family: 'Ubuntu', sans-serif;
+}
+.experience .experience-content,
+.experience .experience-content,
+.projects .projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.experience .title::before {
+    background: #fff;
+}
+.experience .title::after {
+    background: #1c1c1c;
+    content: "Jobs";
+}
+.experience .experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.experience .experience-content .card {
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+}
+
+.experience .experience-content .card .box {
+    display: flex;
+    align-items: center;
+}
+
+.experience .experience-content .card .image {
+    width: 100px; /* Adjust the width of the circular image */
+    height: 100px; /* Adjust the height of the circular image */
+    overflow: hidden;
+    border-radius: 50%; /* Ensure a circular shape */
+    margin-right: 20px; /* Adjust the spacing between the image and text */
+}
+.experience .experience-content .card .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure a circular shape for the image */
+}
+.experience .experience-content .card .crimson-text{
+    font-size: 45px;
+    color: #EE3453;
+    font-weight: 500;
+}
+
+.experience .experience-content .card .company{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+}
+.experience .experience-content .card .time-period{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+    text-align: left;
+}
+.experience .experience-content .card .technologies{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    text-align: left;
+}
+.experience .experience-content .card .text {
+    flex: 1;
+    text-align: left; /* Align the text to the left */
+    font-size: 20px;
+    font-weight: 50;
+    margin: 10px 0 7px 0;
+}
+
 /*skills section styling*/
 .skills {
     color: #fff;
-    background: #111;
+    background: #1c1c1c;
 }
 .skills .title::before {
     background: #fff;
 }
 .skills .title::after{
-    background: #111;
+    background: #1c1c1c;
     content: "Technologies";
 }
 .skills .skills-content .card {
@@ -237,24 +341,23 @@ section .title::after {
     color: #fff;
 }
 .projects {
-    color: #111;
-    background: #fff;
+    color: #fff;
+    background: #1c1c1c;
 }
 .projects .title::before {
-    background: #111;
+    background: #fff;
 }
 .projects .title::after{
-    background: #fff;
+    background: #1c1c1c;
     content: "Recent Works";
 }
 .card-prjct {
     background: white;
     width: 340px;
     margin: 10px;
-    background: #222;
+    background: #2a2a2a;
     text-align: center;
     border-radius: 15px;
-    transition: all 0.3s ease;
     flex-wrap: wrap;
 }
 
@@ -303,10 +406,7 @@ section .title::after {
     margin: 20px 20px;
     border-radius: 6px;
 }
-.card-prjct:hover {
-    transform: scale(1.03);
-    transition: all 0.3s ease;
-}
+
 .card-prjct a:hover {
     transform: scale(1.03);
     transition: all 0.3s ease;
@@ -315,7 +415,7 @@ section .title::after {
 /*contact section styling*/
 .contact {
     color: #fff;
-    background: #111;
+    background: #1c1c1c;
 }
 .contact .title::after{
     content: "Info"
@@ -332,7 +432,7 @@ section .title::after {
     background: #fff;
 }
 .contact .title::after {
-    background: #111;
+    background: #1c1c1c;
 }
 .button {
     top: 40px;
@@ -353,14 +453,14 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .black-text-1{
-    color: #111;
+    color: #1c1c1c;
 }
 .black-text-1:hover {
     transform: scale(1.05);
 }
 /*footer section styling*/
 footer {
-    background: #111;
+    background: #1c1c1c;
     padding: 20px 23px;
     color: #fff;
 }
@@ -403,7 +503,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #1c1c1c;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
