@@ -370,15 +370,14 @@ section .title::after {
 }
 
 /*classi delle immagini */
-
 .img-1 {
-    background-image: url("/website\ 2.0\ style/cafe menu img.jpg");
+    background-image: url("/website\ 2.0\ style/Sorting Visualizer.png");
 }
 .img-2 {
-    background-image: url("/website\ 2.0\ style/Sito web.jpg");
+    background-image: url("/website\ 2.0\ style/Color flipper.jpg");
 }
 .img-3 {
-    background-image: url("/website\ 2.0\ style/Color flipper.jpg");
+    background-image: url("/website\ 2.0\ style/cafe menu img.jpg");
 }
 .img-4 {
     background-image: url("/website\ 2.0\ style/nutrition lable img.jpg");
